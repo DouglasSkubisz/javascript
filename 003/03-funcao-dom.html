@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções com DOM</title>
+</head>
+<body>
+    <H1>Somando valores</H1>
+    <input type="number" name="txtn1" id="txtn1"> + 
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="res">Resultado:</div>
+
+    <script>
+        function somar(){
+            var tn1 = window.document.getElementById('txtn1') //armazenar variavel do input1
+            var tn2 = window.document.getElementById('txtn2') //armazenar variavel do input2
+            var res = window.document.getElementById('res') //armazenar div #res
+            //converter variavel para NUMBER:
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${s}` // PLACEHOLDER usa crase ` `
+        }
+    </script>
+</body>
+</html>

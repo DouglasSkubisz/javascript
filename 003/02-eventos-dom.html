@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventos DOM</title>
+    <style>
+    div#area{
+        font: normal 20pt arial;
+        background-color: aqua;
+        color: blueviolet;
+        line-height: 200px;
+        height: 200px;
+        width: 200px;
+        text-align: center;
+    }
+
+    </style>
+</head>
+<body>
+    <!--
+        Eventos comuns com MOUSE:
+        1- mouseenter
+        2- mousemove
+        3- mousedown
+        4- mouseup
+        5- click
+        6- mouseout
+
+        link util: https://developer.mozilla.org/pt-BR/docs/Web/Events
+    -->
+    <div id="area">
+        Interaja...
+        
+    </div>
+        
+    <script>
+        var area = window.document.getElementById('area')
+        area.addEventListener('click', clicar) //add evento no script
+        area.addEventListener('mouseenter', entrar)
+        area.addEventListener('mouseout', sair)
+        function clicar() {
+            area.innerText = 'Clicou!'
+            area.style.background = 'orange'
+        }
+        function entrar(){
+            area.innerText = 'Entrou!'
+        }
+        function sair(){
+            area.innerText = 'Saiu!'
+            area.style.background = 'aqua'
+        }
+
+    </script>
+</body>
+</html>
