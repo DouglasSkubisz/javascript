@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+body{
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #74f5e4, #74f590);
+    font-size: 20px;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    text-align: center;
+    color: #201c1c;
+}
+section{
+    box-shadow: 5px 5px 10px #201c1c77;
+    width: 500px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 10px;
+}
+div{
+    padding: 10px 0px;
+}
+footer{
+    color: #201c1c;
+    text-align: center;
+    font-style: italic;
+}
+select#flista{
+    width: 180px;
+    outline: none;
+}
+div#res{
+    text-align: center;
+    color: crimson;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
