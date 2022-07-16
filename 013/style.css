@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+body{
+    background-image: linear-gradient(to bottom, #f29bcb, #a651a0);
+    font: normal 15px arial;
+    height: 100vh;
+}
+header{
+    text-align: center;
+    color: aliceblue;
+}
+section{
+    background: aliceblue;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow:  5px 5px 10px rgba(0, 0, 0, 0.514);
+}
+div{
+    text-align: center;
+    padding: 10px 0px;
+}
+footer{
+    color: aliceblue;
+    text-align: center;
+    font-style: italic;
+}
+#res{
+    text-align: center;
+    color: crimson;
+    font-weight: bold;
+    font-size: 16px;
+}
+#botao{
+    text-align: center;
+}

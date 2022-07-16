@@ -29,7 +29,7 @@ function Adicionar(){ //função ao clicar no botao adicionar numeroDigitado na 
     }else{
         window.alert('Valor invalido ou repetido na lista.')
     }
-    num.value = '' // limpa a variavel num digitado (deixa o campo em branco)
+    num.value = '' // limpa a variavel numdigitado (deixa o campo em branco)
     num.focus() // seleciona automaticamente variavel num
 }
 function Finalizar(){
